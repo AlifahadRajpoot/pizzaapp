@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "deliverypizza"
+version = "0.1.0"
+description = ""
+authors = ["AlifahadRajpoot <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.112.1"
+psycopg2 = "^2.9.9"
+loadenv = "^0.1.1"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.30.6"
+sqlmodel = "^0.0.21"
+pydantic = "^2.8.2"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.9"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+
+
+[tool.poetry.scripts]
+dev="deliverypizza.main:start"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
